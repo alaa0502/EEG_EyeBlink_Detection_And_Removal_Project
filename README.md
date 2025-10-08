@@ -8,6 +8,8 @@ This web app is provided to offer a friendly, automatic, and reliable tool for (
  visit:[https: //eye-artifact-cleaner.streamlit.app/](https://eye-artifact-cleaner.streamlit.app/)
  ## 🎥 Demo
 <video src="https://github.com/alaa0502/detection_removel_eye_artifacts/issues/1#issue-3497113306.mp4" controls playsinline width="720"></video>
+<video src="https://github.com/alaa0502/detection_removel_eye_artifacts/issues/1#issue-3497113306.mp4" controls playsinline poster="docs/thumb.png" width="720"></video>
+
 
  
 The tool’s parameters were carefully chosen after a training process using different methods (RNN, CNNs) and were tested with real data and are supported by scientific studies.
