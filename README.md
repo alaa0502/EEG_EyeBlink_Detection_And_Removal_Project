@@ -23,7 +23,8 @@ Manual cleaning is still common and can be **time- and effort-consuming**. This 
 
 ---
 ## 🎥 Demo
-[![Watch the demo](docs/thumb.png)](https://github.com/alaa0502/detection_removel_eye_artifacts/issues/1#issue-3497113306)
+<video src="https://github.com/alaa0502/detection_removel_eye_artifacts/raw/main/docs/demo.mp4"
+       type="video/mp4" controls playsinline width="720" poster="docs/thumb.png"></video>
 
 
 
