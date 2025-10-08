@@ -23,7 +23,7 @@ Manual cleaning is still common and can be **time- and effort-consuming**. This 
 
 ---
 ## 🎥 Demo
-[▶️ Watch the demo (opens the Issue)](https://github.com/alaa0502/detection_removel_eye_artifacts/issues/1#issue-3497113306)
+<video src="https://github.com/alaa0502/detection_removel_eye_artifacts/releases/download/v0-demo/WhatsApp.Video.2025-10-08.at.00.44.01.mp4"
+       type="video/mp4" controls playsinline width="720" poster="docs/thumb.png"></video>
 
-<video src="https://private-user-images.githubusercontent.com/112955765/499098929-985e69b1-c512-41fa-8e5a-7501371acf7c.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..." controls playsinline width="720"></video>
 
