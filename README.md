@@ -6,6 +6,9 @@ This web app is provided to offer a friendly, automatic, and reliable tool for (
  All that is required is to upload an EEG file, choose the strictness of cleaning (default or fine-tuned), and click Start. A cleaned version of the data is then made available for download, ready for use.
  
  visit:[https: //eye-artifact-cleaner.streamlit.app/](https://eye-artifact-cleaner.streamlit.app/)
+ ## 🎥 Demo
+<video src="https://github.com/alaa0502/detection_removel_eye_artifacts/issues/1#issue-3497113306.mp4" controls playsinline width="720"></video>
+
  
 The tool’s parameters were carefully chosen after a training process using different methods (RNN, CNNs) and were tested with real data and are supported by scientific studies.
 
