@@ -20,9 +20,8 @@ This tool provides a simple and accessible solution:
 This tool is currently most suitable for **students or introductory use**.
 
 The model is trained mainly on involuntary eye-blink activity from Fp1 and Fp2 channels.  
-It is not yet trained on voluntary eye movements, other ocular artifacts, muscle (EMG) noise, or environmental noise.
-
-Since I work with diverse EEG recordings, there is potential for gradual refinement of the model to include additional artifact types over time.
+It is not yet trained on voluntary eye movements, other ocular artifacts, other physiological artifacts, (EMG) noise, or environmental noise.
+However, there is potential for gradual refinement of the model to include additional artifact types over time and better support a wider range of research needs.
 
 ---
 
