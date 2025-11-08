@@ -7,7 +7,7 @@
 3.Download your clean edf file. 
 
 ## About this tool
-Eye-blink artifacts are common in EEG recordings and are not related to brain activity.  
+Eye-blink artifacts and articacts in general are common in EEG recordings and usually not relevant to brain studies.  
 They usually need to be removed manually, which is time-consuming and requires experience.
 
 This tool provides a simple and accessible solution:
