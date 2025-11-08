@@ -1,9 +1,10 @@
 # EEG Eye-Blink Artifact Cleaner - in three steps only
 
-**1.Upload your EEG (.edf) 
+1.Upload your EEG (.edf) 
+
 2.Click Start 
-3.Download your clean edf file.**  
----
+
+3.Download your clean edf file. 
 
 ## About this tool
 Eye-blink artifacts are common in EEG recordings and are not related to brain activity.  
@@ -13,10 +14,13 @@ This tool provides a simple and accessible solution:
 - No need to code or preprocess manually.
 - Just upload an `.edf` file, choose cleaning strictness, and get a cleaned version.
   
- **Important limitation:** 
-Please note that this tool is sutable (at the momment) mainly for **students or introductory use**. 
-The current model is trained mainly on eye-blink activity from Fp1 and Fp2 channels.  
+#Important limitation:
+Please note that this tool is sutable (at the momment) mainly for **students or introductory use.
+
+The current model is trained mainly on eye-blink activity from Fp1 and Fp2 channels. 
+
 It is not yet trained on voluntary eye movement artifacts, other artifacts, muscle (EMG) noise, or environmental noise, but here is potential for gradual refinement of the model to cover additional artifact types so it can be equvelant to EEG lab and hopefully mach the proffisional need.
+
 ---
 
 ## Try it online-
