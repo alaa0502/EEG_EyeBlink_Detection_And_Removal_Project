@@ -55,3 +55,13 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run artifact_app.py
+
+---
+##requirements
+
+streamlit>=1.32
+mne>=1.5
+scikit-learn>=1.3
+numpy>=1.23
+plotly>=5.15
+edfio
