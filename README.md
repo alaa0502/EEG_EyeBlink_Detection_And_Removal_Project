@@ -1,6 +1,6 @@
-## End-to-End Independent Final Project – Data Science Course
+# End-to-End Independent Final Project – Data Science Course
 
-# EEG Eye-Blink Artifact Cleaner — in three steps only
+## EEG Eye-Blink Artifact Cleaner — in three steps only
 
 1. Upload your EEG (.edf)  
 2. Click Start  
