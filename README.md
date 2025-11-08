@@ -37,6 +37,15 @@ https://eye-artifact-cleaner.streamlit.app/
 
 
 ---
+## project structure
+
+artifact_app.py → Streamlit web app (upload → clean → download)
+
+final_model.py → Final blink-detection + cleaning functions used in the app
+
+best model.ipynb-colab.pdf → Machine learning model development (visualizations of tests and tuning are included)
+requirements.txt → Python library dependencies
+README.md → Project explanation and usage instructions
 
 ## how to insert it
 
