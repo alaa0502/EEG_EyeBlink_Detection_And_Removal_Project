@@ -36,7 +36,6 @@ https://eye-artifact-cleaner.streamlit.app/
 ##  Demo 
 ![App Demo](./demopic.png)
 
-*(If the image does not show, make sure demopic.png is in the same folder as README.md.)*
 
 ---
 
