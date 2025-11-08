@@ -24,23 +24,12 @@ It is not yet trained on voluntary eye movement artifacts, other artifacts, musc
 ---
 
 ## Try it online-
-Demo video available below if needed.
 
 **Web App:**  
 https://eye-artifact-cleaner.streamlit.app/
 
----
-
-## 🎥 Demo
-*(If the preview does not load, open in browser.)*
-
-<video
-  src="https://alaa0502.github.io/detection_removel_eye_artifacts/demo.mp4"
-  type="video/mp4"
-  controls
-  playsinline
-  width="720">
-</video>
+## Seee app
+![App Demo](./demo.png)
 
 ---
 
