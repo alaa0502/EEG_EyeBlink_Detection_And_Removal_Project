@@ -31,7 +31,6 @@ https://eye-artifact-cleaner.streamlit.app/
 ## See app
 ![App Demo](demopic.png)
 
-
 ---
 
 ## Run Locally (Optional)
