@@ -1,3 +1,5 @@
+# **End to end project**
+
 # EEG Eye-Blink Artifact Cleaner — in three steps only
 
 1. Upload your EEG (.edf)  
