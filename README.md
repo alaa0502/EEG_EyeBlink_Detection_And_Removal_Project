@@ -1,28 +1,26 @@
-# EEG Eye-Blink Artifact Cleaner
+# EEG Eye-Blink Artifact Cleaner - in three steps only
 
-**Upload your EEG (.edf) → Click Start → Download a cleaner signal.**  
-Removes involuntary **eye-blink artifacts** automatically, with the option to fine-tune cleaning strength.  
-Visualize, clean, and continue your analysis with less noise and more confidence.
-
+**1.Upload your EEG (.edf) 
+2.Click Start 
+3.Download your clean edf file.**  
 ---
 
-## Why this tool?
+## About this tool
 Eye-blink artifacts are common in EEG recordings and are not related to brain activity.  
-They usually need to be removed **manually**, which is time-consuming and requires experience.
+They usually need to be removed manually, which is time-consuming and requires experience.
 
-This tool provides a **simple and accessible** solution:
+This tool provides a simple and accessible solution:
 - No need to code or preprocess manually.
 - Just upload an `.edf` file, choose cleaning strictness, and get a cleaned version.
-- Designed mainly for **students, learning labs, and early-stage EEG work**.
-
-**Important limitation:**  
-The current model is trained mainly on **eye-blink activity from Fp1 and Fp2 channels**.  
-It does **not yet cover** voluntary eye movement artifacts, muscle (EMG) noise, or environmental noise.  
-Future development aims to expand the training set to support **clinical and professional research workflows**.
-
+  
+ **Important limitation:** 
+Please note that this tool is sutable (at the momment) mainly for **students or introductory use**. 
+The current model is trained mainly on eye-blink activity from Fp1 and Fp2 channels.  
+It is not yet trained on voluntary eye movement artifacts, other artifacts, muscle (EMG) noise, or environmental noise, but here is potential for gradual refinement of the model to cover additional artifact types so it can be equvelant to EEG lab and hopefully mach the proffisional need.
 ---
 
-## Try it online (no installation needed)
+## Try it online-
+Demo video available below if needed.
 
 **Web App:**  
 https://eye-artifact-cleaner.streamlit.app/
@@ -44,7 +42,7 @@ https://eye-artifact-cleaner.streamlit.app/
 
 ## Run Locally (Optional)
 
-If you want to run or modify the tool on your machine (e.g., research, offline use, development), follow:
+If you want to run or modify the tool on your machine, follow:
 
 ```bash
 # (Optional) Create a virtual environment
@@ -78,4 +76,4 @@ artifact_app.py              → Streamlit app (Upload → Clean → Download)
 final_model.py               → Eye-blink detection + cleaning logic
 best model.ipynb-colab.pdf   → Model development and reasoning notes
 
-##
+
