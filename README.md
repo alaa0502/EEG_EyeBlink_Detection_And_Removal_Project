@@ -1,47 +1,52 @@
-# EEG Eye-Blink Artifact Cleaner - in three steps only
+# EEG Eye-Blink Artifact Cleaner — in three steps only
 
-1.Upload your EEG (.edf) 
-
-2.Click Start 
-
-3.Download your clean edf file. 
-
-## About this tool
-Eye-blink artifacts and articacts in general are common in EEG recordings and usually not relevant to brain studies.  
-They usually need to be removed manually, which is time-consuming and requires experience.
-
-This tool provides a simple and accessible solution:
-- No need to code or preprocess manually.
-- Just upload an `.edf` file, choose cleaning strictness, and get a cleaned version.
-  
-#Important limitation:
-Please note that this tool is sutable (at the momment) mainly for **students or introductory use.
-
-The current model is trained mainly on eye-blink activity from Fp1 and Fp2 channels. 
-
-It is not yet trained on voluntary eye movement artifacts, other artifacts, muscle (EMG) noise, or environmental noise, but here is potential for gradual refinement of the model to cover additional artifact types so it can be equvelant to EEG lab and hopefully mach the proffisional need.
+1. Upload your EEG (.edf)  
+2. Click Start  
+3. Download your cleaned .edf file  
 
 ---
 
-## Try it online-
+## About this tool
+
+Eye-blink artifacts (and artifacts in general) are common in EEG recordings and are usually not relevant to brain activity.  
+They often need to be removed manually, which is time-consuming and requires experience.
+
+This tool provides a simple and accessible solution:
+
+- No need to code or preprocess manually.
+- Just upload an `.edf` file, choose cleaning strictness, and get a cleaned version.
+
+### Important limitation
+This tool is currently most suitable for **students or introductory use**.
+
+The model is trained mainly on involuntary eye-blink activity from **Fp1 and Fp2** channels.  
+It is **not yet** trained on voluntary eye movements, other ocular artifacts, muscle (EMG) noise, or environmental noise.
+
+Since I work with diverse EEG recordings, there is potential for gradual refinement of the model to include additional artifact types over time.
+
+---
+
+## Try it online
 
 **Web App:**  
 https://eye-artifact-cleaner.streamlit.app/
 
-## See app
-![App Demo](demopic.png)
+---
+
+## 🖼️ Demo (Screenshot)
+![App Demo](./demopic.png)
+
+*(If the image does not show, make sure demopic.png is in the same folder as README.md.)*
 
 ---
 
 ## Run Locally (Optional)
 
-If you want to run or modify the tool on your machine, follow:
-
 ```bash
 # (Optional) Create a virtual environment
 python -m venv .venv
 
-# Activate it:
+# Activate:
 # Windows:
 . .venv\Scripts\activate
 # macOS / Linux:
@@ -50,23 +55,5 @@ source .venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Start the web app locally
+# Run the app
 streamlit run artifact_app.py
-
----
-## requrements
-
-streamlit>=1.32
-mne>=1.5
-scikit-learn>=1.3
-numpy>=1.23
-plotly>=5.15
-edfio
- ---
-##project structure
-
-artifact_app.py              → Streamlit app (Upload → Clean → Download)
-final_model.py               → Eye-blink detection + cleaning logic
-best model.ipynb-colab.pdf   → Model development and reasoning notes
-
-
