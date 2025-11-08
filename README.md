@@ -1,19 +1,37 @@
-# EEG Eye-Blink Detection and Removal Tool
+# EEG Eye-Blink Artifact Cleaner
 
-Artifact is a signal caused by an extracerebral source, observed during EEG recording, and is considered unwanted information (noise) in brain studies.  
-The common approach to removing artifacts is done manually by researchers, which is time-consuming and requires expertise.  
-Therefore, a tool that performs this process automatically is needed.
+**Upload your EEG (.edf) → Click Start → Download a cleaner signal.**  
+Removes involuntary **eye-blink artifacts** automatically, with the option to fine-tune cleaning strength.  
+Visualize, clean, and continue your analysis with less noise and more confidence.
 
-This web app is designed to provide a friendly, automatic, and reliable solution for (currently) non-expert use and students.  
-Simply upload an EEG (.edf) file, choose the strictness of cleaning (default or fine-tuned), and click **Start**.  
-A cleaned version of the data will then be available for download.
+---
 
-**Use directly in the browser (no installation needed):**  
+## Why this tool?
+Eye-blink artifacts are common in EEG recordings and are not related to brain activity.  
+They usually need to be removed **manually**, which is time-consuming and requires experience.
+
+This tool provides a **simple and accessible** solution:
+- No need to code or preprocess manually.
+- Just upload an `.edf` file, choose cleaning strictness, and get a cleaned version.
+- Designed mainly for **students, learning labs, and early-stage EEG work**.
+
+**Important limitation:**  
+The current model is trained mainly on **eye-blink activity from Fp1 and Fp2 channels**.  
+It does **not yet cover** voluntary eye movement artifacts, muscle (EMG) noise, or environmental noise.  
+Future development aims to expand the training set to support **clinical and professional research workflows**.
+
+---
+
+## Try it online (no installation needed)
+
+**Web App:**  
 https://eye-artifact-cleaner.streamlit.app/
 
 ---
 
 ## 🎥 Demo
+*(If the preview does not load, open in browser.)*
+
 <video
   src="https://alaa0502.github.io/detection_removel_eye_artifacts/demo.mp4"
   type="video/mp4"
@@ -24,17 +42,15 @@ https://eye-artifact-cleaner.streamlit.app/
 
 ---
 
-## Running Locally (optional)
+## Run Locally (Optional)
 
-If you only want to use the online version, **you can skip this section**.
-
-The installation below is for users who wish to run or modify the app locally (e.g., for research labs, offline use, or development).
+If you want to run or modify the tool on your machine (e.g., research, offline use, development), follow:
 
 ```bash
 # (Optional) Create a virtual environment
 python -m venv .venv
 
-# Activate
+# Activate it:
 # Windows:
 . .venv\Scripts\activate
 # macOS / Linux:
@@ -43,5 +59,23 @@ source .venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the app
+# Start the web app locally
 streamlit run artifact_app.py
+
+---
+## requrements
+
+streamlit>=1.32
+mne>=1.5
+scikit-learn>=1.3
+numpy>=1.23
+plotly>=5.15
+edfio
+ ---
+##project structure
+
+artifact_app.py              → Streamlit app (Upload → Clean → Download)
+final_model.py               → Eye-blink detection + cleaning logic
+best model.ipynb-colab.pdf   → Model development and reasoning notes
+
+##
