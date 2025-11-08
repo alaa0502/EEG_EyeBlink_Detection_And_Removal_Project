@@ -1,4 +1,4 @@
-# **END TO END FINAL PROJECT- data science courcse**
+## End-to-End Independent Final Project – Data Science Course
 
 # EEG Eye-Blink Artifact Cleaner — in three steps only
 
