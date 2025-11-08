@@ -38,7 +38,7 @@ https://eye-artifact-cleaner.streamlit.app/
 
 ---
 
-## Run Locally (Optional)
+## how to insert it
 
 ```bash
 # (Optional) Create a virtual environment
@@ -57,7 +57,8 @@ pip install -r requirements.txt
 streamlit run artifact_app.py
 
 ---
-##requirements
+
+## requirements
 
 streamlit>=1.32
 mne>=1.5
