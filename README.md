@@ -28,8 +28,9 @@ It is not yet trained on voluntary eye movement artifacts, other artifacts, musc
 **Web App:**  
 https://eye-artifact-cleaner.streamlit.app/
 
-## Seee app
-![App Demo](./demopic.png)
+## See app
+![App Demo](demopic.png)
+
 
 ---
 
