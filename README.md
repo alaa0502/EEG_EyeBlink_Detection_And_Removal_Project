@@ -10,7 +10,7 @@
 
 ## About this tool
 
-Eye-blink artifacts (and artifacts in general) are common in EEG recordings and are usually not relevant to brain activity.  
+Eye-blink artifacts (and artifacts in general) are common in EEG recordings and are usually not relevant to brain activity reasurch.  
 They often need to be removed manually, which is time-consuming and requires experience.
 
 This tool provides a simple and accessible solution:
