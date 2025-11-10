@@ -24,7 +24,7 @@ This tool provides a simple and accessible solution:
 - No need to code or preprocess manually.
 - Just upload an `.edf` file, choose cleaning strictness, and get a cleaned version.
 
-  ## inspiration
+## Inspiration
   
 During my practicum in neuroscience, I cleaned EEG data manually and noticed how time-consuming that step can be. 
 I decided to dedicate my final end-to-end project to exploring an automated approach to this problem.
