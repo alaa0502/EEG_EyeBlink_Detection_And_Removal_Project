@@ -10,16 +10,16 @@
 
 ## About this tool
 
-Eye-blink artifacts (and artifacts in general) are common in EEG recordings and are usually not relevant to brain activity research.  
-They often need to be removed manually, which is time-consuming and requires experience.
-
+This project focuses on removing eye-blink artifacts from EEG signals in a simple and accessible way. 
+Eye blinks introduce high-amplitude noise in frontal EEG channels (commonly Fp1/Fp2), which can distort neural signal analysis. 
+The tool automatically detects blink intervals and attenuates their effect, allowing cleaner downstream processing.
 This tool provides a simple and accessible solution:
 
 - No need to code or preprocess manually.
 - Just upload an `.edf` file, choose cleaning strictness, and get a cleaned version.
 
 ### Important limitation
-This tool is currently most suitable for **students or introductory use**.
+This tool is currently most suitable for students or introductory use.
 
 The model is trained mainly on involuntary eye-blink activity from Fp1 and Fp2 channels.  
 It is not yet trained on voluntary eye movements, other ocular artifacts, other physiological artifacts, (EMG) noise, or environmental noise.
