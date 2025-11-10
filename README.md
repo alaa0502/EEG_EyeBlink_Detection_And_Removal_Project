@@ -39,9 +39,7 @@ This tool is designed to automate the reduction of blink artifacts in the fronta
 
 ## Why Start With Blink Artifacts?
 
-Blink artifacts were selected as the starting point because they have a distinct and consistent waveform in the frontal EEG channels, making them relatively straightforward to detect automatically. 
-In contrast, building a general tool that detects all artifact types requires modeling each artifact category separately, with its own labeled data, channel considerations, feature extraction approach, and literature-backed validation criteria. 
-Beginning with blink artifacts provides a focused, realistic foundation that can be extended step-by-step if additional artifact classes are needed.
+Blink artifacts were selected as the starting point because they produce a characteristic frontally distributed signal pattern caused by the oculomotor dipole, which can be isolated in channels such as Fp1 and Fp2 without requiring full multi-channel modeling. In contrast, developing a general artifact-cleaning tool requires treating each artifact type as a separate supervised ML problem, with its own annotation criteria, channel dependence, feature representation, and validation procedure. Beginning with blink artifacts therefore provides a focused and methodologically appropriate foundation before extending automated preprocessing to additional artifact classes.
 
 ---
 
