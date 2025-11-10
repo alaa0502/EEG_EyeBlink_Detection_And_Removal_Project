@@ -2,9 +2,15 @@
 
 ## EEG Eye-Blink Artifact Cleaner App — in three steps only
 
-1. Upload your EEG (.edf)  
-2. Click Start  
-3. Download your cleaned .edf file  
+1) Upload your `.edf` file
+2) Select detection strictness or leave default
+3) Download the cleaned EEG file
+
+---
+## why this tool matters
+
+Unlike EEGLAB’s manual or ICA-based review, this tool uses a lightweight ML approach to automatically remove blink artifacts, reducing manual cleaning time and improving consistency. 
+Currently focused on blink artifacts only.
 
 ---
 
@@ -18,12 +24,24 @@ This tool provides a simple and accessible solution:
 - No need to code or preprocess manually.
 - Just upload an `.edf` file, choose cleaning strictness, and get a cleaned version.
 
-### Important limitation
-This tool is currently most suitable for students or introductory use.
+  ## inspiration
+  
+During my practicum in neuroscience, I cleaned EEG data manually and noticed how time-consuming that step can be. 
+I decided to dedicate my final end-to-end project to exploring an automated approach to this problem.
 
-The model is trained mainly on involuntary eye-blink activity from Fp1 and Fp2 channels.  
-It is not yet trained on voluntary eye movements, other ocular artifacts, other physiological artifacts, (EMG) noise, or environmental noise.
-However, there is potential for gradual refinement of the model to include additional artifact types over time and better support a wider range of research needs.
+---
+
+## limitation of use
+
+This tool is designed to automate the reduction of blink artifacts in the frontal EEG channels (Fp1 and Fp2), where blink-related activity is most strongly represented. Because the model is trained specifically on this channel configuration and artifact type, the tool is currently most appropriate for student use, introductory preprocessing, or quick data cleaning prior to more advanced workflows. Other artifacts (such as muscle activity, voluntary eye movement, and motion-related noise) require different labeling strategies, channel selections, and model designs, so they are not included here; however, the pipeline is modular, and others may extend it to additional artifact classes if desired.
+
+---
+
+## Why Start With Blink Artifacts?
+
+Blink artifacts were selected as the starting point because they have a distinct and consistent waveform in the frontal EEG channels, making them relatively straightforward to detect automatically. 
+In contrast, building a general tool that detects all artifact types requires modeling each artifact category separately, with its own labeled data, channel considerations, feature extraction approach, and literature-backed validation criteria. 
+Beginning with blink artifacts provides a focused, realistic foundation that can be extended step-by-step if additional artifact classes are needed.
 
 ---
 
