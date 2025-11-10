@@ -27,7 +27,7 @@ This tool provides a simple and accessible solution:
 ## Inspiration
   
 During my practicum in neuroscience, I cleaned EEG data manually and noticed how time-consuming that step can be. 
-I decided to dedicate my final end-to-end project to exploring an automated approach to this problem.
+I decided to dedicate my final end-to-end project in Data Science to exploring an automated approach to this problem.
 
 ---
 
