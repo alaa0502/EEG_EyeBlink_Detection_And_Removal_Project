@@ -67,9 +67,9 @@ requirements.txt → Python library dependencies
 
 README.md → Project explanation and usage instructions
 
-## skills:
+## skills
 
-Skills: Python, NumPy, MNE, scikit-learn (RandomForest), Streamlit, EEG (EDF) handling, windowed signal processing, subject-wise cross-validation (LeaveOneGroupOut), evaluation with AUC-PR/AUC-ROC/F1, interactive data apps.
+Python, NumPy, MNE, scikit-learn (RandomForest), Streamlit, EEG (EDF) handling, windowed signal processing, subject-wise cross-validation (LeaveOneGroupOut), evaluation with AUC-PR/AUC-ROC/F1, interactive data apps.
 
 ## how to insert it
 
