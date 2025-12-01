@@ -71,6 +71,22 @@ README.md → Project explanation and usage instructions
 
 Python, NumPy, MNE, scikit-learn (RandomForest), Streamlit, EEG (EDF) handling, windowed signal processing, subject-wise cross-validation (LeaveOneGroupOut), evaluation with AUC-PR/AUC-ROC/F1, interactive data apps.
 
+##  Results 
+
+The model showed high performance, (but these results should be interpreted carefully):
+
+Accuracy: ~0.96
+
+AUC-PR: ~0.97
+
+Blink F1: ~0.88
+
+Held-out subjects:
+
+AUC-ROC ≈0.99
+
+Accuracy ≈0.985
+
 ## how to insert it
 
 ```bash
